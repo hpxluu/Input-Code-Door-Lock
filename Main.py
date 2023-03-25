@@ -2,7 +2,6 @@ import Adafruit_BBIO.GPIO as GPIO   #import the Adafruit BBIO Library for contro
 import Adafruit_BBIO.PWM as PWM     #import the Adafruit BBIO Library for controlling the GPIOs with PWM properties
 import time                         #import the time library
 
-
 # Setting up the GPIO pin outs
 
 GPIO.setup("P8_13", GPIO.IN, GPIO.PUD_DOWN) # pin outs for the buttons
@@ -94,7 +93,6 @@ try:
             passwordCheck(codeCheck)
             codeCheck.clear()
             time.sleep(0.5) 
-
             
         # After inputting the password and getting a response from
         # either the green or red LED, all the LEDs are set to low for the
